@@ -48,7 +48,7 @@ new Vue({
         },
         deleteToDo: function(index) {
             if (confirm("Are you sure you want to delete this To-Do Item?")) {
-                this.events.$remove(index);
+                this.todos.splice(index, 1);
             }
         }
     }
