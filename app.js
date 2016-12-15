@@ -1,3 +1,12 @@
 new Vue({
-    el: '#todos'
+    el: '#todos',
+    data: {
+
+    },
+    ready: function() {
+
+    },
+    methods: {
+
+    }
 })
