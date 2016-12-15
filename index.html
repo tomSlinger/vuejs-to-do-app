@@ -55,7 +55,7 @@
                         <i class="glyphicon glyphicon-calendar" v-if="todo.date"></i> {{ todo.date }}
                     </h5>
                     <p class="list-group-item-text" v-if="todo.description">{{ todo.description }}</p>
-                    <button class="btn btn-xs btn-danger" v-on="click: deleteToDo($index)">Delete</button>
+                    <button class="btn btn-xs btn-danger" @click="deleteToDo($index)">Delete</button>
                 </a>
             </div>
         </div>
