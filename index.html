@@ -27,7 +27,20 @@
                     <h3>Add a To-Do</h3>
                 </div>
                 <div class="panel-body">
-
+                    <!--To-Do Name-->
+                    <div class="form-group">
+                        <input class="form-control" placeholder="To-Do Name" v-model="todo.name">
+                    </div>
+                    <!--To-Do Description-->
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="To-Do Description" v-model="todo.description"></textarea>
+                    </div>
+                    <!--To-Do Date-->
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder="Date" v-model="todo.date">
+                    </div>
+                    <!--To-Do Submit Button-->
+                    <button class="btn btn-default" @click="click">Submit</button>
                 </div>
             </div>
         </div>
