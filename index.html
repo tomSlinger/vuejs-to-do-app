@@ -47,7 +47,16 @@
         <!--Show all To-Dos-->
         <div class="col-sm-6">
             <div class="list-group">
-
+                <a href="#" class="list-group-item" v-for="todo in todos">
+                    <h4 class="list-group-item-heading">
+                        <i class="glyphicon glyphicon-bullhorn"></i> {{ todo.name }}
+                    </h4>
+                    <h5>
+                        <i class="glyphicon glyphicon-calendar" v-if="todo.date"></i> {{ todo.date }}
+                    </h5>
+                    <p class="list-group-item-text" v-if="todo.description">{{ todo.description }}</p>
+                    <button class="btn btn-xs btn-danger" v-on="click: deleteToDo($index)">Delete</button>
+                </a>
             </div>
         </div>
     </div>
