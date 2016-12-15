@@ -1,0 +1,19 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "A simple To-Do Application. Made with Vue.Js and Bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomSlinger/vuejs-to-do-app.git"
+  },
+  "author": "Tom Slinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomSlinger/vuejs-to-do-app/issues"
+  },
+  "homepage": "https://github.com/tomSlinger/vuejs-to-do-app#readme"
+}
